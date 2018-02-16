@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class Mascotas {
 
     public static void main(String[] args) {
-        Animal animales[] = new Animal[10];
+        Animal animales[] = new Animal[12];
         animales[0] = new Gato();
         animales[1] = new Gato();
         animales[2] = new Gato();
@@ -27,6 +27,9 @@ public class Mascotas {
         animales[7] = new Pollo();
         animales[8] = new Pollo();
         animales[9] = new Pollo();
+        
+        animales[10]=new Raton();
+        animales[11]=new Raton();
         
         ServicioAnimales s = new ServicioAnimales();
     

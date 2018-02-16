@@ -5,7 +5,7 @@
  */
 package poliejemplo;
 
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  *
@@ -36,6 +36,21 @@ public class Mascotas {
         for (Animal a : animales) {
             s.servicioHacerRuido((ComportamienoAnimal) a);
         }
+        
+       //Vamos a generar un ArrayList y poner alli
+       //algunos animalitos
+       ArrayList<Animal> animalitos=new ArrayList<>();
+       animalitos.add(new Pollo());
+       animalitos.add(new Raton());
+       animalitos.add(new Raton());
+       animalitos.add(new Perro());
+       animalitos.add(new Gato());
+       for (Animal a: animalitos){
+           s.servicioHacerRuido((ComportamienoAnimal)a); 
+       }
+       animalitos.get(0).setEdad(1);
+        System.out.println(animalitos.get(0).getEdad());
+       
         
            
 

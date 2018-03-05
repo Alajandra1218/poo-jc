@@ -34,6 +34,15 @@ public class ProbarNominas {
       
       ServicioNomina servicio=new ServicioNomina();
       
+      
+      for(Trabajador t: trabajadores){
+          servicio.pagarNomina((PagoNomina) t);
+      }
+      
+      
+      
+      
+      
       trabajadores.forEach((t) -> {
           servicio.pagarNomina((PagoNomina) t);
         });
